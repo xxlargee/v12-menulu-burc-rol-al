@@ -8,4 +8,4 @@ Discord: ⍭'Lâwâinn'S#2309
 
 Kullanım;
 
-koddaki herşeyi ayarladıktan sonra çalıştırmak için burç rol kanalına gelip menü yazmanız yeterli olacaktır.
+Config.json'da ki gerekli şeyleri kopyalayıp kendi json'unuza yapıştırın.
