@@ -1,0 +1,621 @@
+// CodAre <3
+// ⍭'Lâwâinn'S#2309
+const { MessageEmbed } = require("discord.js")
+const { MessageMenu, MessageMenuOption } = require('discord-buttons');
+client.on("message", async message => {
+    if(message.content.startsWith("menü")){
+        if(message.author.bot) return;
+        let secenek1 = new MessageMenuOption()
+        .setLabel("Koç")
+        .setValue("Koçrol")
+        .setDescription("Koç rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♈") // Lawainn
+        let secenek2 = new MessageMenuOption()
+        .setLabel("Boğa")
+        .setValue("Boğarol")
+        .setDescription("Boğa rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♉")
+        let secenek3 = new MessageMenuOption()
+        .setLabel("İkizler")
+        .setValue("İkizlerrol")
+        .setDescription("İkizler rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♊")
+        let secenek4 = new MessageMenuOption()
+        .setLabel("Yengeç")
+        .setValue("Yengeçrol")
+        .setDescription("Yengeç rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♋")//codare
+        let secenek5 = new MessageMenuOption()
+        .setLabel("Aslan")
+        .setValue("Aslanrol")
+        .setDescription("Aslan rolünü almak için tıkla!")
+        .setDefault()//  ⛎♓♒♑♐
+        .setEmoji("♌")
+        let secenek6 = new MessageMenuOption()
+        .setLabel("Başak")
+        .setValue("Başakrol")
+        .setDescription("Başak rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♍")
+        let secenek7 = new MessageMenuOption()
+        .setLabel("Terazi")
+        .setValue("Terazirol")
+        .setDescription("Terazi rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji('♎')
+        let secenek8 = new MessageMenuOption()
+        .setLabel("Akrep")/codare
+        .setValue("Akreprol")
+        .setDescription("Akrep rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♏")
+        let secenek9 = new MessageMenuOption()
+        .setLabel("Yay")
+        .setValue('Yayrol')
+        .setDescription("Yay rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♐")
+        let secenek10 = new MessageMenuOption()
+        .setLabel("Oğlak")
+        .setValue('Oğlakrol')
+        .setDescription("Oğlak rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♑")
+        let secenek11 = new MessageMenuOption()
+        .setLabel("Kova") // ⍭'Lâwâinn'S#2309
+        .setValue('Kovarol')
+        .setDescription("Kova rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♒")
+        let secenek12 = new MessageMenuOption()
+        .setLabel("Balık")
+        .setValue('Balıkrol')
+        .setDescription("Balık rolünü almak için tıkla!")
+        .setDefault()
+        .setEmoji("♊")
+        let secenekyok = new MessageMenuOption()
+        .setLabel("Rol yok")
+        .setValue('İstemiyorum')
+        .setDescription("Rol istemiyorum.")
+        .setDefault()
+        .setEmoji('❌')
+        let menu = new MessageMenu()
+        .setID("MENU")
+        .setMaxValues(1)
+        .setMinValues(1)
+        .setPlaceholder("Burç rolünü almak için tıkla!")
+        .addOption(secenek1)
+        .addOption(secenek2)
+        .addOption(secenek3)
+        .addOption(secenek4)
+        .addOption(secenek5)
+        .addOption(secenek6)
+        .addOption(secenek7)
+        .addOption(secenek8)
+        .addOption(secenek9)
+        .addOption(secenek10)
+        .addOption(secenek11)
+        .addOption(secenek12)
+        .addOption(secenekyok)
+        let menumesaj = await message.channel.send('Aşağıda ki menüye tıklayarak istediğiniz burç rolünü alabilirsiniz.', menu)
+        function menuselection(menu) {
+            switch(menu.values[0]) {
+             //   let roller = config.boğarol || config.ikizlerrol || config.yengeçrol || config.aslanrol || config.terazirol || config.akreprol || config.yayrol || 
+                //config.oğlakrol || config.kovarol || config.balıkrol || config.koçrol
+                case "Koçrol":
+                    menu.reply.send("Başarılı bir şekilde **Koç** burcunu seçtin.", true)
+                if (!menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.add(config.koçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.remove(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+                case "Boğarol":
+                    menu.reply.send("Başarılı bir şekilde **Boğa** burcunu seçtin.",true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.add(config.boğarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.cache.has(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.cache.has(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+                case "İkizlerrol":
+                    menu.reply.send("Başarılı bir şekilde **İkizler** burcunu seçtin.", true)
+                   if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                   } if (!menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.add(config.ikizlerrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                // Lawainn
+                   } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.cache.has(config.oğlakrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.cache.has(config.balıkrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)  
+                }
+                break;
+                case "Yengeçrol":
+                    menu.reply.send("Başarılı bir şekilde **Yengeç** burcunu seçtin.", true)
+                   if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                   } if (!menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.add(config.yengeçrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                // ⍭'Lâwâinn'S#2309
+                   } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.remove(config.oğlakrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.cache.has(config.balıkrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                    menu.clicker.member.roles.remove(config.başakrol)
+                }
+                
+                break;
+                case "Aslanrol":
+                    menu.reply.send("Başarılı bir şekilde **Aslan** burcunu seçtin.", true)
+                   if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.remove(config.oğlakrol)
+                // codare
+                   } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                   } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                   } if (!menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.add(config.aslanrol)
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+                case "Başakrol":
+                menu.reply.send("Başarılı bir şekilde **Başak** burcunu seçtin.", true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.remove(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.add(config.başakrol)
+                }
+                break;
+              case "Terazirol":
+                menu.reply.send("Başarılı bir şekilde **Terazi** burcunu seçtin.", true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.add(config.terazirol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.cache.has(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+              case "Akreprol":
+                menu.reply.send("Başarılı bir şekilde **Akrep** burcunu seçtin.", true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.add(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.remove(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+              case "Yayrol":
+                menu.reply.send("Başarılı bir şekilde **Yay** burcunu seçtin.", true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.add(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.cache.has(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+              case "Oğlakrol":
+                menu.reply.send("Başarılı bir şekilde **Oğlak** burcunu seçtin.", true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.add(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.cache.has(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+              case "Kovarol":
+                menu.reply.send("Başarılı bir şekilde **Kova** burcunu seçtin.", true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){
+                  menu.clicker.member.roles.cache.has(config.oğlakrol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.kovarol)){
+                  menu.clicker.member.roles.add(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+              case "Balıkrol":
+                menu.reply.send("Başarılı bir şekilde **Balık** burcunu seçtin.",true)
+                if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){ 
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){  
+                  menu.clicker.member.roles.cache.has(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){  
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (!menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.add(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+                break;
+              case "İstemiyorum":
+                menu.reply.send('Burç rollerin alındı.', true)
+             if (menu.clicker.member.roles.cache.has(config.koçrol)){
+                  menu.clicker.member.roles.remove(config.koçrol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.boğarol)){
+                  menu.clicker.member.roles.remove(config.boğarol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.ikizlerrol)){
+                  menu.clicker.member.roles.remove(config.ikizlerrol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.yengeçrol)){
+                  menu.clicker.member.roles.remove(config.yengeçrol)
+
+                } if (menu.clicker.member.roles.cache.has(config.terazirol)){
+                  menu.clicker.member.roles.remove(config.terazirol)
+
+                } if (menu.clicker.member.roles.cache.has(config.akreprol)){
+                  menu.clicker.member.roles.remove(config.akreprol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.yayrol)){ 
+                  menu.clicker.member.roles.remove(config.yayrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.oğlakrol)){  
+                  menu.clicker.member.roles.remove(config.oğlakrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.kovarol)){  
+                  menu.clicker.member.roles.remove(config.kovarol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.balıkrol)){
+                  menu.clicker.member.roles.remove(config.balıkrol)
+                
+                } if (menu.clicker.member.roles.cache.has(config.aslanrol)){
+                  menu.clicker.member.roles.remove(config.aslanrol)
+                  
+                } if (menu.clicker.member.roles.cache.has(config.başakrol)){
+                  menu.clicker.member.roles.remove(config.başakrol)
+                }
+            } //  ⍭'Lâwâinn'S#2309
+        }
+        client.on("clickMenu", menu => {
+            if(menu.message.id == menumesaj.id) {
+                    menuselection(menu)
+            }
+        })
+    }
+})
