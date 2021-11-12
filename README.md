@@ -1,11 +1,11 @@
 # v12-butonlu-burc-rol-al
-Lawainn tarafından yapılmıştır, config... yazanları kendinize göre ayarlayıp kullanabilirsiniz.
+Lawainn tarafından yapılmıştır, conf json'u indirip ayarlayabilirsiniz.
 
-Discord: ⍭'Lâwâinn'S#2309
+Discord: ㇲ'Lâwâinn#2309
 
 İzinsiz, kendi adınıza paylaşmak yasaktır.
 
 
 Kullanım;
 
-Config.json'da ki gerekli şeyleri kopyalayıp kendi json'unuza yapıştırın.
+config.json'da ki gerekli şeyleri kopyalayıp kendi json'unuza yapıştırın.
